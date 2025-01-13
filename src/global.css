@@ -1,0 +1,37 @@
+:root{
+    --white: #fff;
+
+    --gray-100: #e1e1e6; /* Cinza muito claro */
+    --gray-200: #c4c4cc; /* Cinza claro */
+    --gray-300: #a9a9b2; /* Cinza médio claro */
+    --gray-400: #8f8f9d; /* Cinza médio */
+    --gray-500: #737380; /* Cinza moderado */
+    --gray-600: #5c5c63; /* Cinza escuro */
+    --gray-700: #3f3f46; /* Cinza muito escuro */
+    --gray-800: #29292e; /* Cinza quase preto */
+    --gray-900: #121214; /* Cinza preto */
+
+    --green-500: #00875f;
+
+    --green-300: #00B37E;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--gray-900);
+    color: var(--gray-300);
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+body, input, textarea, button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem; /*usar rem para questões de acessibilidade*/
+}
