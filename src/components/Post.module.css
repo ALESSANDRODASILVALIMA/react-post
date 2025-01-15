@@ -11,7 +11,8 @@
 
 .post header{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;  
+    align-items: center;  
 }
 
 .post header img{
@@ -57,3 +58,55 @@
 .content a:hover{
     color: var(--green-300);
 }
+
+.post > .comment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    border-top: solid 1px #323238;
+    padding-top: 1rem;
+}
+
+.post .comment strong{
+    color: var(--white);
+}
+
+
+
+.post .comment button:hover{
+    background-color: var(--green-300);
+}
+.post .comment textarea{
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-900);
+    padding: 13px 16px;
+    /*border: solid  var(--green-500);*/
+    resize: none;
+}
+
+.post .comment textarea:focus{
+    color: var(--white);
+}
+
+.post .comment:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.comment footer{
+    visibility: hidden;
+    max-height: 0;
+}
+
+.post .comment button{
+    color: white;
+    background-color: var(--green-500);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.commentList{}

@@ -1,13 +1,15 @@
 import styles from './Post.module.css'
 
-export function Post( props ){
+import { Comment } from './Comment'
+
+export function Post(props) {
     return <>
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
                     <img src="https://images.unsplash.com/photo-1709651669999-57741c9bf085?q=80&w=260&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div className={styles.authorInfo}>
-                        <strong>Alessandro</strong>
+                        <strong>{props.nome}</strong>
                         <span>Web Developer</span>
                     </div>
                 </div>
@@ -23,6 +25,26 @@ export function Post( props ){
                 <a href='#'>exemplo.com</a>
 
             </div>
+
+            <form className={styles.comment} action="">
+                <strong>Deixe seu feedback</strong>
+
+                <textarea placeholder='Deixe um comentario'>
+
+                </textarea>
+                <footer>
+                    <button type='submit'>Publicar</button>
+                </footer>
+            </form>
+
+            <div className={styles.commentList}>
+            <Comment />
+            <Comment />
+            <Comment />
+            </div>
+           
         </article>
+        
+
     </>
 }

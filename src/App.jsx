@@ -25,7 +25,7 @@ export function App() {
               bio="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod cupiditate tempore, eum dignissimos voluptatum?"
           />
 
-        <Post nome="Alexandre"/>
+
         </main>
 
       </div>

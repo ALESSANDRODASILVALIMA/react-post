@@ -40,7 +40,7 @@
     object-fit: cover;
 }
 
-footer{
+.sidebar footer{
     border-top: 1px solid var(--gray-500);
     margin-top: 1.5rem;
     padding: 1.5rem 2rem 2rem;
@@ -49,7 +49,7 @@ footer{
     align-items: center;
 }
 
-footer a{
+.sidebar footer a{
     border: 2px solid var(--green-500);
     border-radius: 5px;
     padding: 16px 24px;
@@ -68,3 +68,4 @@ footer a:hover{
     color: white;
     transition: all 0.5s ease;
 }
+

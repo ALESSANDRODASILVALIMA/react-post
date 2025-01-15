@@ -8,7 +8,7 @@
     --gray-500: #737380; /* Cinza moderado */
     --gray-600: #5c5c63; /* Cinza escuro */
     --gray-700: #3f3f46; /* Cinza muito escuro */
-    --gray-800: #29292e; /* Cinza quase preto */
+    --gray-800: #202024; /* Cinza quase preto */
     --gray-900: #121214; /* Cinza preto */
 
     --green-500: #00875f;
@@ -17,6 +17,12 @@
 
 
 }
+
+:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+}
+
 *{
     margin: 0;
     padding: 0;

@@ -1,0 +1,64 @@
+.commentContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.commentContainer + .commentContainer {
+    margin-top: 1rem;
+}
+
+.commentContainer div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #29292E;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.commentContainer div strong {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 14px;
+}
+
+.commentContainer div header i {
+    cursor: pointer;
+}
+
+.commentContainer div strong span {
+    color: var(--gray-700);
+}
+
+.commentContainer .commentText {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.commentContainer div time {
+    font-size: 12px;
+}
+
+.commentContainer article {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.commentContainer article > i {
+    display: flex;
+    gap: 0.5rem;
+    color: var(--green-500);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.commentContainer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.5rem;
+}
