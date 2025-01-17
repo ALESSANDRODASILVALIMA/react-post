@@ -15,15 +15,7 @@
     align-items: center;  
 }
 
-.post header img{
-    box-sizing: initial;  /*usei devido ao outline*/
-    /*width: calc(3rem + 12px);*/
-    height: 3rem;
-    object-fit: cover;
-    border-radius: 3px;
-    border: 0.25rem solid var(--gray-500);
-    outline: 0.25rem solid var(--green-500);
-}
+
 
 .post  header .authorInfo{
     display: flex;

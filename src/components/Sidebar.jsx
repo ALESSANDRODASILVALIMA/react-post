@@ -2,6 +2,7 @@ import styles from './Sidebar.module.css'
 import iconLapis from '../assets/iconLapis.svg'
 
 import { PencilLine } from "@phosphor-icons/react";
+import { Avatar } from './Avatar';
 
 export function Sidebar(){
 
@@ -14,11 +15,12 @@ export function Sidebar(){
             />
             
             <div className={styles.profile}>
-                <img src="https://images.unsplash.com/photo-1709651669999-57741c9bf085?q=80&w=260&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            <       Avatar url="https://images.unsplash.com/photo-1709651669999-57741c9bf085?q=80&w=260&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    borda={true}/>
                 <strong>Alessandro</strong>
                 <span>Web Developer</span>
             </div>
-
+                
             <footer>
                 <a href='#' className={styles.button}>
                     <div><PencilLine size={20} /></div>
